@@ -1,0 +1,282 @@
+/* font-family: 'Permanent Marker', cursive;
+font-family: 'Handlee', cursive;*/
+/*a0a0a0 color de fondo gris*/
+/*e84b11 color titulo naranja*/
+/* b03c0c color terracota titulos secundarios*/
+@font-face {
+    font-family: 'handleeregular';
+    src: url('../fuente/handlee-regular-webfont.woff2') format('woff2'),
+         url('../fuente/handlee-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'permanent_markerregular';
+    src: url('../fuente/permanentmarker-regular-webfont.woff2') format('woff2'),
+         url('../fuente/permanentmarker-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+	font-family: 'handleeregular','permanent_markerregular';
+	font-size: 16px;
+	line-height: 28px;
+	background-color: #a0a0a0;
+	color: black;
+	width: 960px;
+	padding: 0;
+	margin: 0 auto;
+}
+.holder{
+	align-content: center;
+}
+header{
+	background: url(../img/general/encabezado2.jpg);
+	background-size: cover;
+	padding: 0;
+	height: 150px;
+	width: 100%;
+}
+.fondo{
+	margin: 0 auto;
+}
+header h1{
+	color: #e84b11;
+	font-family: 'permanent_markerregular';
+	font-size: 2.5em;
+	font-style: bold;
+	display: inline-block;
+	position: relative;
+	margin-left: 4em;
+}
+nav{
+	background-color: rgb(0,0,0,0.5);
+	margin-bottom: 0.2em;
+}
+nav ul{
+	list-style: none;
+	margin-top: 0;
+	padding: 0;
+
+}
+nav ul li{
+	display: inline-block;
+	width: 20%;
+}
+
+nav ul li a{
+	color: #e84b11;
+	background-color: rgb(0,0,0,0.5);
+	font-size: 1.5em;
+	text-decoration: none;
+	padding:0.2em 0.4em;
+	text-align: center;
+	display: block;
+	transition: all 0.3s ease;
+}
+nav ul li a:hover{
+	background-color: gray;
+
+}
+nav ul li a.activo{
+	background-color: gray;
+}
+.columna{
+	width: 30%;
+	height: 750px;
+	float: left;
+	margin-left: 0.8em;
+	margin-bottom: 1em;
+	border: 1px solid gray;
+	border-radius: 5px;
+
+}
+.columna img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+	margin-top: 0.6em;
+}
+.columna h2, .columna h3, .noticias h2, .noticias h3, .viaje h2, .viaje h3{
+	text-align: center;
+	color: #b03c0c;
+}
+.columna p{
+	margin-left: 0.6em;
+}
+.noticias{
+	width: 62%;
+	float: right;
+	margin-left: 0.2em;
+	margin-right: 0.8em;
+	margin-bottom: 0.2em;
+	border: 1px solid gray;
+	border-radius: 5px;
+
+}
+.noticias p{
+	margin-left: 0.6em
+}
+.contenedor{
+	width: 62%;
+	background-color: red;
+	float: right;
+	margin-left: 0.2em;
+	margin-right: 0.8em;
+	margin-bottom: 1em;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+.viaje{
+	width: 33.3%;
+	background-size: cover;
+	float: left;
+	padding: 0;
+	margin: 0;
+	transition: all 0.3 ease;
+}
+.viaje img{
+	border-radius: 50%;
+	display: block;
+	margin: 0;
+	padding: 0;
+	margin-top: 0.4em;
+	transform: scale(0.5);
+	transition: all 0.3 ease;
+}
+.viaje:hover{
+	background: gray;
+	background-size: cover;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+.viaje:hover img{
+	transform: scale(0.8);
+	padding: 0;
+}
+.viaje:hover h2, .viaje:hover h3{
+	color: #86153c;
+	transform: scale(1);
+}
+
+
+
+footer{
+	background-color: grey;
+	clear: both;
+	font-style: italic;
+	text-align: center;
+	padding: 0.4em 0;
+	margin-top: 0.4em;
+}
+footer h5{
+	color: #b03c0c;
+	text-align: center;
+}
+
+/*fin pagina home*/
+/* incio pagina about me*/
+.conocimientos{
+	border: 1px solid #ddd;
+	border-radius: 0.7em;
+	margin: 1em 0;
+	padding: 1em;
+	overflow: hidden;
+}
+.conocimientos figure{
+	display: inline-block;
+}
+.conocimientos figure img{
+	border-radius: 0.8em;
+}
+.conocimientos .info{
+	width: 75%;
+}
+
+.conocimientos .info h3{
+	color: #b03c0c;
+	margin: 0 0 1em;
+	border-bottom: 1px solid grey;
+	padding-bottom: 0.5em;
+}
+.conocimientos .info p{
+	line-height: 1.2em;
+	font-size: 1.2em;
+}
+.conocimientos h3{
+	font-size: 1.5em;
+}
+.conocimientos:nth-child(odd) figure{
+	float: left;
+	margin: 0 1em 0 0;
+}
+.conocimientos:nth-child(odd) .info{
+	float: right;
+}
+.conocimientos:nth-child(even) figure{
+	float: right;
+	margin: 0 1em 0 0;
+}
+.conocimientos:nth-child(even) .info{
+	float: left;
+}
+/* fin pagina about me*/
+/*inicio pagina trips*/
+
+.fecha{
+	width:20%;
+	background-color: green;
+	/*height: 200px*/
+	float: left;
+	margin: 30em 0;
+	padding: 0;
+
+}
+
+.fecha img{
+	width:100px;
+	height: 100px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+.fecha h3, .fecha h4, .trip h2, .trip h3, .trip h4{
+	color: #b03c0c;
+	text-align: center;
+}
+.trip{
+	width: 75%;
+	padding: 0 1em;
+	float: right;
+	border: 1px solid white;
+	border-radius: 0.7em;
+	margin: 1em 0;
+	overflow: hidden;
+}
+.trip img{
+	border-radius: 0.7em;
+	display: block;
+	padding: 0.4em 1.8em;
+
+}
+.fototrip{
+	float: left;
+}
+
+
+
+
+
+
+
+/*fin pagina trips */
+
+

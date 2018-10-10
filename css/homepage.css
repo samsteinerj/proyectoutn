@@ -1,0 +1,63 @@
+body{
+	background-color: black;
+}
+.contenedor{
+	width: 90%;
+	height: 800px;
+	margin: 0 auto;
+	font-family: arial;
+	font-size: 20px;
+	color: lightblue;
+	background-color: black;
+}
+header{
+width: 70%;
+height: 200px;
+text-align: right;
+border-bottom: 10px;
+position: relative;
+top:2px;
+left:300px;
+}
+header h1{
+	color:orange;
+	text-align: right;
+}
+nav{
+	height: 500px;
+	width: 20%;
+	float: left;
+	background-color: 100, 100, 100, 0.25;
+}
+nav ul{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	width: 20%;
+}
+nav ul li a {
+	font-size: 14px;
+	color:white;
+	font-weight: bold;
+	line-height: 80px;
+	display: table-row-group;
+	border: 2px;
+	border-color: grey;
+}
+content{
+	width: 80%;
+	float:left;
+	height: 500px;
+	background-color: purple;
+}
+
+footer{
+	clear:both;
+	background-color: pink;
+	width: 100%;
+	height: 100px;
+}
+
+
+
+
