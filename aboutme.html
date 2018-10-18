@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>About Me</title>
 	<link href="fuentes/https://fonts.googleapis.com/css?family=Handlee|Permanent+Marker" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
@@ -12,13 +13,20 @@
 <body>
 	<div class="holder">
 		<header>
-				<img src="img/general/" alt="logo">
-			<h1>Travel to Find</h1>
+			<h1>Travel to Find . . .</h1>
+				<nav>
+					<ul>
+						<li><a class="icon-gmail" href="mailto:traveltofind@gmail.com?subject=Information=Hi! I want to reciebe more info about the upcoming trips!" title="gmail"></a></li>
+						<li><a class="icon-instagram" href="https://www.instagram.com/traveltofind365" title="instagram"></a></li>
+						<li><a class="icon-whatsapp" href="https://api.whatsapp.com/send?phone=+593995930857" title="whatsapp"></a></li>
+
+					</ul>
+				</nav>
 		</header>
 	</div>
 	<nav>
 		<ul>
-			<li><a href="index.html" title="Home">Home</a></li><li><a class="activo" href="aboutme.html" title="About Me">About Me</a></li><li><a href="#" title="Trips">Trips</a></li><li><a href="#" title="Galery">Galery</a></li><li><a href="#" title="Contact">Contact</a></li>
+			<li><a  class="icon-home" href="index.html" title="Home">Home</a></li><li><a class="icon-aboutme" href="aboutme.html" title="About Me">About Me</a></li><li><a class="icon-trips" href="trips.html" title="Trips">Trips</a></li><li><a class="icon-galery" href="galery.html" title="Galery">Galery</a></li><li><a class="icon-contact" href="contact.html" title="Contact">Contact</a></li>
 
 		</ul>
 	</nav>
@@ -47,8 +55,10 @@
 				<img src="img/about/05.jpg" alt="me" width="200" height="200">
 			</figure>
 			<div class="info">
-				<h3>Tour guide and driver</h3>
-				<p>Not only am I your tour guide but also your driver. I drive my own car with a capacity for 5 passangers. Therefore limited availavility but it also means there is flexibity. Depending on the group and the weather conditions we might change the plans a bit to make it more fun!</p>
+				<div data-aos="fade-right">
+					<h3>Tour guide and driver</h3>
+					<p>Not only am I your tour guide but also your driver. I drive my own car with a capacity for 5 passangers. Therefore limited availavility but it also means there is flexibity. Depending on the group and the weather conditions we might change the plans a bit to make it more fun!</p>
+				</div>
 			</div>
 		</div>	
 	</section>
@@ -56,6 +66,9 @@
 		<h5> Travel To Find 2018 - Samantha Steiner</h5>
 	</footer>
 
-
+	<script src="aos/aos.js" charset="utf-8"></script>
+	<script>
+  		AOS.init();
+	</script>
 </body>
 </html>
